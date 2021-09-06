@@ -4,7 +4,7 @@ import Button from "./Component/Button";
 const App = () => {
   return (
     <div className="App">
-      <h1 className="header">ButtonS</h1>
+      <h1 className="header" data-testid="header">Button</h1>
       <div className="flex-column">
         <div className="flex-row first-item">
           <Button
@@ -74,7 +74,7 @@ const App = () => {
           <Button size="btn--medium" variant="btn--red" label="Button"></Button>
           <Button size="btn--small" variant="btn--red" label="Button"></Button>
         </div>
-        <div className="flex-row fourth-item">
+        <div className="flex-row fifth-item">
           <Button
             size="btn--ExtraLarge"
             variant="btn--grey"

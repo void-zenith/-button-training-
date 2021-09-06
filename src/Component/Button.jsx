@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Button.css";
 
 // const size=["btn--ExtraLarge","btn--large","btn--medium","btn--small"]
 // const variant = ["btn--primary","btn--secondary","btn--outlined"];
 const Button = ({ size, variant, label }) => {
+  const [label2, setLable2] = useState(`${label}`);
+
   const handleClick = () => {
-    document.querySelector(".header").innerText = "Hello World";
+    setLable2("label");
+
+    document.querySelector(".header").textContent = "Hello World";
   };
+
   return (
     <div className="flex">
       <button
         className={`btn ${size} ${variant}`}
         onClick={handleClick}
-        data-testid ="button"
+        data-testid="button"
       >
-        {label}
+        {label2}
       </button>
     </div>
   );
