@@ -1,0 +1,59 @@
+:root {
+  --blue-color: #363865;
+  --green-color: #1fb86e;
+  --red-color: #b81f1f;
+  --grey-color: #929292;
+}
+
+.btn {
+  border-radius: 13px;
+  height: 42px;
+  outline: none;
+  border: none;
+
+  /*font*/
+  font-size: 21px;
+  color: white;
+}
+
+/*sizes*/
+.btn--ExtraLarge {
+  width: 270px;
+}
+
+.btn--large {
+  width: 220px;
+}
+
+.btn--medium{
+    width: 170px;
+}
+
+.btn--small{
+    width: 120px;
+}
+
+/*end of sizes*/
+
+/*for colors*/
+.btn--blue {
+  background-color: var(--blue-color);
+}
+
+.btn--green{
+    background-color: var(--green-color);
+}
+
+.btn--grey{
+    background-color: var(--grey-color);
+}
+.btn--red{
+    background-color: var(--red-color);
+}
+.btn--outlined{
+    background-color: white;
+    border: 2.5px solid var(--blue-color);
+    color: var(--blue-color);
+}
+/*end of for colors*/
+
